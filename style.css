@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin: 5px auto;
+  /* background-color: grey; */
+  width: 95%;
+  max-width: 1300px;
+  height: auto;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+/*header*/
+
+.header {
+  display: flex;
+
+  width: 100%;
+  height: 200px;
+
+  /* background-color: green; */
+}
+.left {
+  width: 35%;
+  /* background: yellow; */
+}
+.image img {
+  margin: 35px 30px 20px 35px;
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* //Right  */
+
+.right {
+  /* background: pink; */
+  width: 100%;
+
+  padding: 30px 0 0 50px;
+}
+
+.right h2 {
+  text-align: black;
+  font-weight: bold;
+}
+.right p {
+  padding-top: 10px;
+  font-size: large;
+  margin-bottom: 3px;
+}
+.right a {
+  text-decoration: none;
+  color: black;
+  /* padding-top: px; */
+  font-size: large;
+}
+
+/* //link/ */
+
+.githublink {
+  margin: 20px 0 0 20px;
+  height: 20px;
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+.githublink a {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+
+.maincontent {
+  width: 100%;
+  height: auto;
+  /* background-color: red; */
+  margin: 5px;
+}
+
+#repositories-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.repo-card {
+  margin: 20px;
+  border: 1px solid grey;
+  padding: 10px;
+  text-align: center;
+}
+
+.repo-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: blue;
+  /* font-style: italic; */
+}
+
+.repo-card p {
+  margin-bottom: 10px;
+}
+
+.repo-card p.description {
+  color: #586069;
+}
+
+.repo-card p.language {
+  font-weight: bold;
+  color: blue;
+}
+
+/* style it more better tommorow */
+
+#pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#pagination-container button {
+  background-color: hsl(210, 24%, 90%);
+  color: hwb(249 6% 27%);
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#pagination-container button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+#pagination-container button.active {
+  background-color: #0056b3;
+}
+
+.pagination-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 50px;
+}
+
+#button {
+  width: 100px;
+  height: 40px;
+  border-radius: 100px;
+  color: blue;
+}
+
+#button:hover {
+  background-color: #0056b3;
+  color: white;
+}
