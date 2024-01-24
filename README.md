@@ -18,3 +18,5 @@
 
 1. clone the repo into local machine.
 2. use live server extention to run it into browser
+
+changes has been made in readme file
